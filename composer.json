@@ -1,0 +1,50 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7",
+        "php": "^8.0.2"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "spatie/laravel-ignition": "^1.0",
+        "symplify/monorepo-builder": "^11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": [
+                "packages/first-laravel-project/app/",
+                "packages/second-laravel-project/app/"
+            ],
+            "Database\\Factories\\": [
+                "packages/first-laravel-project/database/factories/",
+                "packages/second-laravel-project/database/factories/"
+            ],
+            "Database\\Seeders\\": [
+                "packages/first-laravel-project/database/seeders/",
+                "packages/second-laravel-project/database/seeders/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": [
+                "packages/first-laravel-project/tests/",
+                "packages/second-laravel-project/tests/"
+            ]
+        }
+    },
+    "extra": {
+        "laravel": []
+    },
+    "replace": {
+        "laravel/laravel": "self.version"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
